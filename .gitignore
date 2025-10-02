@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 
 /Data/raw_data/*csv
+/Data/processed_data/*csv
