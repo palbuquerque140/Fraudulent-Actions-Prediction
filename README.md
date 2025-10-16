@@ -9,7 +9,7 @@ Built a binary classification model to detect fraudulent credit card transaction
 **Insights**
 
 - The dataset is well-balanced, with only a few outliers.
-- Features V1–V28 were already scaled, while Amount required standardization.
+- Features `V1–V28` were already scaled, while `Amount` required standardization.
 - Several variables were correlated, suggesting potential redundancy or interactions to explore.
 
 ## Methodology
@@ -17,19 +17,19 @@ Built a binary classification model to detect fraudulent credit card transaction
 **Data Preprocessing:**
 
 - Handled outliers and verified no missing values were present.
-- Scaled the Amount feature to align with the other already standardized variables.
-- Applied PCA for dimensionality reduction and noise suppression, which also reduced multicollinearity.
+- **Scaled** the `Amount` feature to align with the other already standardized variables.
+- Applied **PCA** for dimensionality reduction and noise suppression, which also reduced multicollinearity.
 
 **Modeling & Validation:**
 
-- Implemented K-Fold Cross-Validation at the start to evaluate model stability and generalization.
-- Initially tested three models: Logistic Regression, Gradient Boosting, and a Neural Network.
-- Gradient Boosting and Neural Network were discontinued early due to long training times, as Logistic Regression already achieved strong results in cross-validation.
-- Logistic Regression was then selected for further optimization.
+- Implemented **K-Fold Cross-Validation** at the start to evaluate model stability and generalization.
+- Initially tested three models: `Logistic Regression`, `Gradient Boosting`, and a `Neural Network`.
+- `Gradient Boosting and Neural Network` were **discontinued** early due to long training times, as `Logistic Regression` already achieved **strong results** in cross-validation.
+- `Logistic Regression` was then selected for **further optimization**.
 
 **Hyperparameter Tuning:**
 
-- Fine-tuned Logistic Regression using Randomized Search to optimize regularization strength and solver parameters, ensuring robust convergence.
+- Fine-tuned Logistic Regression using **Randomized Search** to optimize regularization strength and solver parameters, ensuring robust convergence.
 
 
 ## Results
