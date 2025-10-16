@@ -18,7 +18,7 @@ Built a binary classification model to detect fraudulent credit card transaction
 
 - Handled outliers and verified no missing values were present.
 - **Scaled** the `Amount` feature to align with the other already standardized variables.
-- Applied **PCA** for dimensionality reduction and noise suppression, which also reduced multicollinearity.
+- Applied **PCA** for dimensionality reduction and noise suppression, while maintaning relevant info.
 
 **Modeling & Validation:**
 
@@ -29,7 +29,7 @@ Built a binary classification model to detect fraudulent credit card transaction
 
 **Hyperparameter Tuning:**
 
-- Fine-tuned Logistic Regression using **Randomized Search** to optimize regularization strength and solver parameters, ensuring robust convergence.
+- Fine-tuned `Logistic Regression` using **Randomized Search** to optimize regularization strength and solver parameters, ensuring robust convergence.
 
 
 ## Results
@@ -49,4 +49,4 @@ The model **successfully identifies the vast majority of fraudulent transactions
 ## Recommendations & Next Steps
 
 - **Extended Hyperparameter Tuning:** Use Grid Search to further refine Logistic Regression parameters beyond the Randomized Search already performed.
-- **Model Exploration**: Revisit Gradient Boosting and Neural Network models to evaluate their performance, as they were initially stopped due to long training times. Consider using smaller subsets, optimized hyperparameters, or more efficient implementations to make this feasible.
+- **Model Exploration**: Revisit Gradient Boosting and Neural Network models to evaluate their performance, as they were initially stopped due to long training times. 
